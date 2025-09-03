@@ -1,0 +1,82 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+
+body {
+
+display: flex;
+
+font-family: Arial, sans-serif;
+
+margin: 5vh;
+
+padding: 10%;
+
+overflow: hidden;
+
+background-color: rgb(74, 172, 192);
+}
+.ScrollText {
+
+position: absolute;
+
+white-space: nowrap;
+
+animation : ScrollText 5s linear infinite;
+}
+.blinkingText {
+
+animation: blinkText 2s alternate infinite;
+}
+@keyframes ScrollText{
+0%{
+transform:translateX(100%);
+}
+100%{
+
+transform: translateX(-100%);
+}}
+@keyframes blinkText{
+0%, 100%{
+opacity: 1;
+}
+
+50%{
+
+opacity:0;
+
+}}
+
+</style>
+
+<title> css Animation Demo </title>
+
+</head>
+
+<Body>
+
+<div class="ScrollText">
+
+This is a  Scrollable text that Scrolls
+
+from left to right </div>
+
+<div class = "blinkingText">
+
+<P> This a is a blinking text that blinks at regular intervals. </p>
+
+<p> show result in a different line </P>
+
+</div>
+
+</body>
+
+</html>
